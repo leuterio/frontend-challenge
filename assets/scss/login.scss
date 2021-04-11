@@ -1,1 +1,51 @@
 @import 'vars.scss';
+
+section.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login {
+    background: $white;
+    border-radius: 10px;
+    padding: 25px 60px;
+    text-align: center;
+    width: 230px;
+    p.title {
+        @include content($font_md, $main);
+        margin: 0px;
+        margin-bottom: 35px;
+        font-weight: 500;
+    }
+    .form-group {
+        text-align: left;
+        &+.form-group {
+            margin-top: 15px;
+        }
+        label, input, button {
+            font-size: $font_xsm;
+            font-family: $primary_font;
+        }
+        input, button {
+            border-radius: 5px;
+            height: 35px;
+        }
+        input {
+            border: 1px solid $main;
+            width: calc(100% - 12px);
+            padding: 0px 5px;
+        }
+        label {
+            color: $main;
+            font-size: $font_xsm;
+            font-family: $primary_font;
+        }
+        button {
+            background: $main;
+            color: $white;
+            border: 0px;
+            margin-top: 25px;
+            width: 100%;
+        }
+    }
+}

@@ -9,6 +9,7 @@ $font_xlg: 48px;
 $font_lg: 32px;
 $font_md: 22px;
 $font_sm: 16px;
+$font_xsm: 14px;
 
 //Colors
 $main: #174DBA;
@@ -20,6 +21,7 @@ $dark: #505050;
 @mixin title($size) {
     font-family: $primary_font;
     font-weight: bold;
+    color: $main;
     font-size: $size;
 }
 
@@ -30,4 +32,16 @@ $dark: #505050;
     color: $color;
 }
 
+//Global Adjust
+body {
+    margin: 0;
+    background: $gray;
+}
+section.content {
+    margin-top: 65px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(100vh - 100px);
+}
 

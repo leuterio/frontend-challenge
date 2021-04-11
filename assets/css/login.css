@@ -1,1 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+body {
+  margin: 0;
+  background: #EFF0F3; }
+
+section.content {
+  margin-top: 65px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  height: calc(100vh - 100px); }
+
+section.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.login {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 25px 60px;
+  text-align: center;
+  width: 230px; }
+  .login p.title {
+    font-family: "Helvetica Neue", "Helvetica", "Open Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    color: #174DBA;
+    margin: 0px;
+    margin-bottom: 35px;
+    font-weight: 500; }
+  .login .form-group {
+    text-align: left; }
+    .login .form-group + .form-group {
+      margin-top: 15px; }
+    .login .form-group label, .login .form-group input, .login .form-group button {
+      font-size: 14px;
+      font-family: "Helvetica Neue", "Helvetica", "Open Sans", Arial, sans-serif; }
+    .login .form-group input, .login .form-group button {
+      border-radius: 5px;
+      height: 35px; }
+    .login .form-group input {
+      border: 1px solid #174DBA;
+      width: calc(100% - 12px);
+      padding: 0px 5px; }
+    .login .form-group label {
+      color: #174DBA;
+      font-size: 14px;
+      font-family: "Helvetica Neue", "Helvetica", "Open Sans", Arial, sans-serif; }
+    .login .form-group button {
+      background: #174DBA;
+      color: #FFFFFF;
+      border: 0px;
+      margin-top: 25px;
+      width: 100%; }
