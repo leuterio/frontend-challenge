@@ -1,0 +1,22 @@
+{
+  "name": "frontend-challenge",
+  "version": "1.0.0",
+  "description": "![UpperSoft](https://raw.githubusercontent.com/uppersoft/teste-front-end/master/assets/logo-readme.png)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w assets/scss/ -o assets/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leuterio/frontend-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leuterio/frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/leuterio/frontend-challenge#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
