@@ -1,0 +1,34 @@
+//Alternative to Helvetica Neue
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+//Font Family
+$primary_font: 'Helvetica Neue', 'Helvetica', 'Open Sans', Arial, sans-serif;
+
+//Font Sizes
+$font_xlg: 48px;
+$font_lg: 32px;
+$font_md: 22px;
+$font_sm: 16px;
+
+//Colors
+$main: #174DBA;
+$gray: #EFF0F3;
+$white: #FFFFFF;
+$dark: #505050;
+
+//Mixins
+@mixin title($size) {
+    font-family: $primary_font;
+    font-weight: bold;
+    font-size: $size;
+}
+
+@mixin content($size, $color) {
+    font-family: $primary_font;
+    font-weight: normal;
+    font-size: $size;
+    color: $color;
+}
+
+
