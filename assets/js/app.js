@@ -3,6 +3,13 @@ var loginButton = document.getElementById("login-button");
 //document.querySelectorAll('.entrar')[0].style.display = 'none';
 //document.querySelectorAll('.smooth-spinner')[0].style.display = 'block';
 
+loginButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
+    login(email, senha);
+}, false);
+
 function login(email, password) {
     fetch('https://reqres.in/api/login', {
         method: 'POST',
@@ -21,8 +28,4 @@ function login(email, password) {
         });
 }
 
-loginButton.addEventListener("click", function (e) {
-    var email = document.getElementById("email").value;
-    var senha = document.getElementById("senha").value;
-    login(email, senha);
-}, false);
+
