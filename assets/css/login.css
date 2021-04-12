@@ -73,6 +73,13 @@ section.content {
       margin-top: 25px;
       width: 100%;
       position: relative; }
+  .login .login-error {
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Helvetica", "Open Sans", Arial, sans-serif;
+    color: #f06565;
+    opacity: 0;
+    margin: 0px;
+    margin-top: 15px; }
 
 .smooth-spinner {
   display: none; }

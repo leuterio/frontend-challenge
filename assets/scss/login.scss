@@ -57,6 +57,14 @@ section.content {
             width: 100%;
             position: relative;
         }
+    } 
+    .login-error {
+        font-size: 14px;
+        font-family: $primary_font;
+        color: rgb(240, 101, 101);
+        opacity: 0;
+        margin: 0px;
+        margin-top: 15px;
     }
 }
 

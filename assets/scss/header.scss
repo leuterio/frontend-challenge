@@ -15,4 +15,23 @@ header.main-header {
         height: 35px;
         width: auto;
     }
+    .logout {
+        position: absolute;
+        right: 25px;
+        height: 45px;
+        padding: 0px 25px;
+        background: none;
+        border: 1px solid $white;
+        border-radius: 5px;
+        color: $white;
+        font-size: $font_xsm;
+        @media(max-width: 768px) {
+            padding: 0px 15px;
+            right: 10px;
+        }
+        &:hover {
+            background: $white;
+            color: $main;
+        }
+    }
 }

@@ -1,10 +1,13 @@
+let logoutButton = document.getElementById("logout-button");
+(sessionStorage.getItem("token")) ? '' : window.location.href = '/';
+
 fetch('https://reqres.in/api/users?page=1')
     .then(res => res.json())
     .then((data) => {
-        var users = data.data;
-        var showing = data.per_page;
-        var total = data.total;
-        var displayInfoString = 'Mostrando ' + showing + ' de ' + total + '';
+        let users = data.data;
+        let showing = data.per_page;
+        let total = data.total;
+        let displayInfoString = 'Mostrando ' + showing + ' de ' + total + '';
         let userCard = ''
 
         for (let i = 0; i < users.length; i++) {
@@ -21,5 +24,12 @@ fetch('https://reqres.in/api/users?page=1')
         const displayInfo = document.querySelector('#display-info')
         displayInfo.insertAdjacentHTML('beforeend', displayInfoString)
     }).catch(err => console.error(err));
+
+
+    logoutButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        sessionStorage.removeItem("token");
+        window.location.href = '/';
+    });
 
 
