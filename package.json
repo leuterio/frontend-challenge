@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/leuterio/frontend-challenge#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "node-sass": "^5.0.0"
   }
 }
