@@ -4,7 +4,7 @@
   "description": "![UpperSoft](https://raw.githubusercontent.com/uppersoft/teste-front-end/master/assets/logo-readme.png)",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w assets/scss/ -o assets/css/ --recursive"
+    "sass": "node-sass -w src/scss/ -o src/css/ --recursive"
   },
   "repository": {
     "type": "git",
